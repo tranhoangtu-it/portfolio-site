@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { Menu, X, Zap } from "lucide-react";
 
 const navLinks = [
@@ -13,6 +14,14 @@ const navLinks = [
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const pathname = usePathname();
+
+  // Match active link: exact for "/", prefix for others
+  function isActive(href: string): boolean {
+    if (href === "/") return pathname === "/";
+    if (href.startsWith("/#")) return pathname === "/";
+    return pathname.startsWith(href);
+  }
 
   return (
     <nav
@@ -28,6 +37,7 @@ export default function Navbar() {
           href="/"
           className="flex items-center gap-2 font-mono font-bold text-lg"
           style={{ color: "var(--accent)" }}
+          aria-label="ai.engineer — home"
         >
           <Zap size={20} />
           <span>ai.engineer</span>
@@ -39,8 +49,11 @@ export default function Navbar() {
             <Link
               key={link.href}
               href={link.href}
+              aria-current={isActive(link.href) ? "page" : undefined}
               className="text-sm font-medium transition-colors duration-200 hover:text-white"
-              style={{ color: "var(--muted-foreground)" }}
+              style={{
+                color: isActive(link.href) ? "var(--foreground)" : "var(--muted-foreground)",
+              }}
             >
               {link.label}
             </Link>
@@ -69,6 +82,8 @@ export default function Navbar() {
           style={{ color: "var(--muted-foreground)" }}
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle menu"
+          aria-expanded={menuOpen}
+          aria-controls="mobile-menu"
         >
           {menuOpen ? <X size={22} /> : <Menu size={22} />}
         </button>
@@ -77,6 +92,7 @@ export default function Navbar() {
       {/* Mobile menu */}
       {menuOpen && (
         <div
+          id="mobile-menu"
           className="md:hidden border-t px-4 py-4 flex flex-col gap-4"
           style={{
             backgroundColor: "var(--surface)",
@@ -87,8 +103,11 @@ export default function Navbar() {
             <Link
               key={link.href}
               href={link.href}
+              aria-current={isActive(link.href) ? "page" : undefined}
               className="text-sm font-medium py-2"
-              style={{ color: "var(--muted-foreground)" }}
+              style={{
+                color: isActive(link.href) ? "var(--foreground)" : "var(--muted-foreground)",
+              }}
               onClick={() => setMenuOpen(false)}
             >
               {link.label}

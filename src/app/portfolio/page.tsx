@@ -23,31 +23,31 @@ const projects = [
     ],
   },
   {
-    title: "E-commerce Automation Suite",
+    title: "mcpman — MCP Server Manager",
     description:
-      "Six integrated n8n workflows automating order management, inventory alerts, customer follow-ups, and daily performance reporting for a Shopify store.",
-    tags: ["n8n", "Shopify API", "Google Sheets", "Slack"],
+      "CLI tool for managing Model Context Protocol servers with v2.1.0 featuring 46 commands, streamlined server lifecycle management, config validation, and structured logging.",
+    tags: ["Go", "MCP", "CLI", "DevTools"],
     metrics: [
-      { label: "20 hours/week saved" },
-      { label: "6 workflows" },
-      { label: "Zero manual data entry" },
+      { label: "v2.1.0 — 46 commands" },
+      { label: "Multi-server management" },
+      { label: "Config validation" },
     ],
     links: [
-      { type: "case-study" as const, label: "Case Study", href: "#" },
+      { type: "github" as const, label: "GitHub", href: "https://github.com/tranhoangtu-it/mcpman" },
     ],
   },
   {
-    title: "AI Content Pipeline",
+    title: "MedAgent — AI Healthcare Assistant",
     description:
-      "End-to-end content generation system with AI drafting, human review queue, and auto-publishing to WordPress. Integrated with Airtable for editorial management.",
-    tags: ["n8n", "OpenAI", "Airtable", "WordPress"],
+      "Secure multi-agent healthcare assistant with Row-Level Security (RLS) enforcement, protobuf compilation for typed service contracts, and HIPAA-aligned data access controls.",
+    tags: ["Python", "Protobuf", "RLS", "Multi-agent", "PostgreSQL"],
     metrics: [
-      { label: "5x content output" },
-      { label: "AI + human review" },
-      { label: "SEO optimized" },
+      { label: "RLS enforcement" },
+      { label: "Protobuf compilation" },
+      { label: "HIPAA-aligned security" },
     ],
     links: [
-      { type: "case-study" as const, label: "Case Study", href: "#" },
+      { type: "github" as const, label: "GitHub", href: "https://github.com/tranhoangtu-it/medagent" },
     ],
   },
   {

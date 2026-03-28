@@ -87,10 +87,12 @@ export default function ContactPage() {
                   figure out how AI can save you time.
                 </p>
               </div>
+              {/* TODO: Replace href with a real Calendly or Cal.com booking link, e.g. https://cal.com/tranhoangtu/30min */}
               <a
                 href="#"
                 className="text-sm font-medium px-4 py-2.5 rounded-lg text-center transition-colors duration-200"
                 style={{ backgroundColor: "var(--accent)", color: "#ffffff" }}
+                aria-disabled="true"
               >
                 Schedule 30-min Consultation
               </a>
