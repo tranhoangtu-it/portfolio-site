@@ -4,7 +4,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "AI Automation Engineer | Your Name",
+  title: "AI Automation Engineer | Hoang Tu Tran",
   description:
     "I build custom AI systems that automate business workflows — chatbots, RAG pipelines, n8n automations, and multi-agent solutions.",
   keywords: [
