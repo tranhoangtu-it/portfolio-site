@@ -22,7 +22,7 @@ export default function ContactForm() {
     e.preventDefault();
     setLoading(true);
     // Formspree / mailto fallback — replace action URL with real endpoint
-    const mailto = `mailto:hello@yourname-ai.com?subject=Project Inquiry from ${encodeURIComponent(form.name)}&body=${encodeURIComponent(form.message)}%0A%0AFrom: ${encodeURIComponent(form.email)}`;
+    const mailto = `mailto:tranhoangtu.it@gmail.com?subject=Project Inquiry from ${encodeURIComponent(form.name)}&body=${encodeURIComponent(form.message)}%0A%0AFrom: ${encodeURIComponent(form.email)}`;
     window.location.href = mailto;
     setTimeout(() => {
       setSubmitted(true);

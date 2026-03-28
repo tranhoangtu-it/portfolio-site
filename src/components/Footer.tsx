@@ -9,9 +9,9 @@ const quickLinks = [
 ];
 
 const socialLinks = [
-  { icon: Github, label: "GitHub", href: "#" },
-  { icon: Linkedin, label: "LinkedIn", href: "#" },
-  { icon: Twitter, label: "Twitter/X", href: "#" },
+  { icon: Github, label: "GitHub", href: "https://github.com/tranhoangtu-it" },
+  { icon: Linkedin, label: "LinkedIn", href: "https://linkedin.com/in/tranhoangtu" },
+  { icon: Twitter, label: "Twitter/X", href: "https://x.com/tranhoangtu" },
 ];
 
 export default function Footer() {
@@ -79,7 +79,7 @@ export default function Footer() {
               ))}
             </div>
             <p className="text-sm mt-2" style={{ color: "var(--muted-foreground)" }}>
-              hello@yourname-ai.com
+              tranhoangtu.it@gmail.com
             </p>
           </div>
         </div>

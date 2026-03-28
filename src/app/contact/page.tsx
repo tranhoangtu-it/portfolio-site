@@ -11,26 +11,26 @@ const contactDetails = [
   {
     icon: Mail,
     label: "Email",
-    value: "hello@yourname-ai.com",
-    href: "mailto:hello@yourname-ai.com",
+    value: "tranhoangtu.it@gmail.com",
+    href: "mailto:tranhoangtu.it@gmail.com",
   },
   {
     icon: Github,
     label: "GitHub",
-    value: "github.com/yourname",
-    href: "#",
+    value: "github.com/tranhoangtu-it",
+    href: "https://github.com/tranhoangtu-it",
   },
   {
     icon: Linkedin,
     label: "LinkedIn",
-    value: "linkedin.com/in/yourname",
-    href: "#",
+    value: "linkedin.com/in/tranhoangtu",
+    href: "https://linkedin.com/in/tranhoangtu",
   },
   {
     icon: Twitter,
     label: "Twitter / X",
-    value: "@yourname_ai",
-    href: "#",
+    value: "@tranhoangtu",
+    href: "https://x.com/tranhoangtu",
   },
 ];
 

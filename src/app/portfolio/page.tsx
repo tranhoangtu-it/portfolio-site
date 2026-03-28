@@ -18,7 +18,7 @@ const projects = [
       { label: "<500ms first token" },
     ],
     links: [
-      { type: "github" as const, label: "GitHub", href: "#" },
+      { type: "github" as const, label: "GitHub", href: "https://github.com/tranhoangtu-it/rag-chatbot" },
       { type: "demo" as const, label: "Live Demo", href: "#" },
     ],
   },
@@ -61,7 +61,7 @@ const projects = [
       { label: "Structured reports" },
     ],
     links: [
-      { type: "github" as const, label: "GitHub", href: "#" },
+      { type: "github" as const, label: "GitHub", href: "https://github.com/tranhoangtu-it/multi-agent-assistant" },
       { type: "demo" as const, label: "Live Demo", href: "#" },
     ],
   },
