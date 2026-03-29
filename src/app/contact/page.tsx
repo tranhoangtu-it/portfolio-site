@@ -24,7 +24,7 @@ const contactDetails = [
     icon: Linkedin,
     label: "LinkedIn",
     value: "linkedin.com/in/tranhoangtu",
-    href: "https://linkedin.com/in/tranhoangtu",
+    href: "https://linkedin.com/in/tranhoangtu-dev",
   },
   {
     icon: Twitter,
